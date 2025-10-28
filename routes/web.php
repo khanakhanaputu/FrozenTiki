@@ -10,5 +10,6 @@ Route::get('/', function () {
 
 // Route::get('/test', fn()=> view('latihan.tesview'));
 
-// Route::get('/produk', [ProdukController::class, 'index']);
-// Route::get('/produk/jenis/{jenis}', [ProdukController::class, 'show']);
+Route::get('/produk', [ProdukController::class, 'index']);
+
+Route::get('produk/{jenis}',[ProdukController::class, 'show']);
